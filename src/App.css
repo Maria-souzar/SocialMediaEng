@@ -1,0 +1,312 @@
+/* =========================
+   CONFIGURAÇÕES GERAIS
+========================= */
+
+.pagina {
+  min-height: 100vh;
+  background-color: #08088f;
+  color: #ffffff;
+}
+
+
+/* =========================
+   MENU
+========================= */
+
+.header {
+  width: 100%;
+  height: 50px;
+  background-color: #1010f5;
+}
+
+.nav {
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+
+  gap: 35px;
+
+  padding-left: 25px;
+}
+
+.nav a {
+  color: #ffffff;
+
+  text-decoration: none;
+
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+
+  transition: opacity 0.2s ease;
+}
+
+.nav a:hover {
+  opacity: 0.7;
+}
+
+
+/* =========================
+   ÁREA PRINCIPAL
+========================= */
+
+.hero {
+  width: 100%;
+  min-height: calc(100vh - 50px);
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 80px;
+
+  padding: 40px;
+}
+
+
+/* =========================
+   TEXTO
+========================= */
+
+.hero-text {
+  width: 470px;
+}
+
+.hero-text h1 {
+  margin-bottom: 25px;
+
+  font-family: 'Poppins', sans-serif;
+
+  font-size: 42px;
+  font-weight: 400;
+
+  line-height: 1.2;
+}
+
+.hero-text p {
+  font-family: 'Poppins', sans-serif;
+
+  font-size: 27px;
+  font-weight: 400;
+
+  line-height: 1.45;
+}
+
+
+/* =========================
+   ILUSTRAÇÃO
+========================= */
+
+.social-image {
+  width: 300px;
+  height: 270px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  overflow: hidden;
+
+  background:
+    linear-gradient(
+      135deg,
+      #202020,
+      #111111
+    );
+}
+
+
+/* =========================
+   CELULAR
+========================= */
+
+.phone {
+  width: 150px;
+  height: 260px;
+
+  position: relative;
+
+  transform: rotate(25deg);
+
+  border-radius: 20px;
+
+  background: linear-gradient(
+    135deg,
+    #101010,
+    #252525
+  );
+
+  box-shadow:
+    0 12px 30px rgba(0, 0, 0, 0.5);
+}
+
+
+/* TELA */
+
+.phone::before {
+  content: "";
+
+  position: absolute;
+
+  width: 132px;
+  height: 225px;
+
+  top: 17px;
+  left: 9px;
+
+  border-radius: 14px;
+
+  background:
+    radial-gradient(
+      circle at 20% 20%,
+      #ff0055 0 8%,
+      transparent 9%
+    ),
+
+    radial-gradient(
+      circle at 80% 25%,
+      #00c8ff 0 8%,
+      transparent 9%
+    ),
+
+    radial-gradient(
+      circle at 35% 75%,
+      #ff9d00 0 8%,
+      transparent 9%
+    ),
+
+    linear-gradient(
+      135deg,
+      #172b4d,
+      #7b168c 45%,
+      #ff5733
+    );
+}
+
+
+/* TEXTO DO CELULAR */
+
+.phone-title {
+  position: absolute;
+
+  top: 35px;
+  left: 27px;
+
+  z-index: 2;
+
+  color: white;
+
+  font-family: Arial, sans-serif;
+  font-size: 17px;
+  font-weight: bold;
+
+  transform: rotate(-25deg);
+}
+
+
+/* ÍCONES */
+
+.social-icons {
+  position: absolute;
+
+  z-index: 3;
+
+  top: 60px;
+  left: 25px;
+
+  width: 100px;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 14px;
+
+  transform: rotate(-25deg);
+}
+
+.social-icons span {
+  width: 25px;
+  height: 25px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 7px;
+
+  background-color: rgba(255, 255, 255, 0.9);
+
+  color: #111111;
+
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+
+/* =========================
+   RESPONSIVIDADE
+========================= */
+
+@media (max-width: 900px) {
+
+  .hero {
+    gap: 50px;
+  }
+
+  .hero-text {
+    width: 400px;
+  }
+
+  .hero-text h1 {
+    font-size: 36px;
+  }
+
+  .hero-text p {
+    font-size: 23px;
+  }
+
+  .social-image {
+    width: 250px;
+    height: 230px;
+  }
+
+  .phone {
+    width: 125px;
+    height: 220px;
+  }
+}
+
+
+@media (max-width: 650px) {
+
+  .hero {
+    flex-direction: column;
+
+    text-align: center;
+
+    gap: 45px;
+
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .hero-text {
+    width: 100%;
+  }
+
+  .hero-text h1 {
+    font-size: 34px;
+  }
+
+  .hero-text p {
+    font-size: 21px;
+  }
+
+  .social-image {
+    width: 240px;
+    height: 220px;
+  }
+}

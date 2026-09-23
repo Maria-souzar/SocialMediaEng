@@ -1,0 +1,360 @@
+/* =========================
+   CONFIGURAÇÕES GERAIS
+========================= */
+
+.sobre-page {
+  min-height: 100vh;
+
+  background-color: #1010f5;
+
+  color: #ffffff;
+
+  font-family: 'Poppins', sans-serif;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.sobre-header {
+  width: 100%;
+  height: 40px;
+
+  background-color: #08088f;
+}
+
+.sobre-nav {
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+
+  gap: 25px;
+
+  padding-left: 16px;
+}
+
+.sobre-nav a {
+  color: #ffffff;
+
+  text-decoration: none;
+
+  font-size: 14px;
+  font-weight: 400;
+
+  transition: opacity 0.2s ease;
+}
+
+.sobre-nav a:hover {
+  opacity: 0.7;
+}
+
+
+/* =========================
+   ÁREA PRINCIPAL
+========================= */
+
+.sobre-main {
+  width: 100%;
+
+  min-height: calc(100vh - 40px);
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* =========================
+   CONTEÚDO
+========================= */
+
+.sobre-content {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 30px;
+
+  width: 900px;
+
+  padding: 40px;
+}
+
+
+/* =========================
+   ILUSTRAÇÃO
+========================= */
+
+.sobre-ilustracao {
+  position: relative;
+
+  width: 330px;
+  height: 230px;
+
+  overflow: hidden;
+
+  background-color: #eaf7fa;
+
+  border: 3px solid #08d4f5;
+}
+
+
+/* =========================
+   PRÉDIOS
+========================= */
+
+.sobre-ilustracao::before {
+  content: "";
+
+  position: absolute;
+
+  bottom: 0;
+  left: 0;
+
+  width: 100%;
+  height: 70px;
+
+  background-color: #9be7ef;
+}
+
+
+/* =========================
+   CELULAR
+========================= */
+
+.illustration-phone {
+  position: absolute;
+
+  left: 5px;
+  bottom: 35px;
+
+  width: 75px;
+  height: 105px;
+
+  background-color: #064b68;
+
+  border-radius: 5px 5px 0 0;
+}
+
+.phone-screen {
+  position: absolute;
+
+  top: 12px;
+  left: 7px;
+
+  width: 61px;
+  height: 70px;
+
+  padding: 8px;
+
+  background-color: #d8f4f7;
+}
+
+.screen-line {
+  width: 45px;
+  height: 5px;
+
+  margin-bottom: 7px;
+
+  background-color: #6bd4df;
+}
+
+.screen-line.short {
+  width: 30px;
+}
+
+.screen-button {
+  width: 20px;
+  height: 10px;
+
+  margin-top: 8px;
+
+  background-color: #ff5364;
+}
+
+
+/* =========================
+   PESSOAS
+========================= */
+
+.person {
+  position: absolute;
+
+  bottom: 35px;
+
+  width: 35px;
+  height: 90px;
+}
+
+
+/* CABEÇA */
+
+.person .head {
+  position: absolute;
+
+  top: 0;
+  left: 10px;
+
+  width: 15px;
+  height: 15px;
+
+  border-radius: 50%;
+
+  background-color: #f2a66f;
+}
+
+
+/* CORPO */
+
+.person .body {
+  position: absolute;
+
+  top: 17px;
+  left: 5px;
+
+  width: 25px;
+  height: 35px;
+
+  border-radius: 8px;
+
+  background-color: #18a9c0;
+}
+
+
+/* PERNAS */
+
+.person .legs {
+  position: absolute;
+
+  top: 49px;
+  left: 8px;
+
+  width: 20px;
+  height: 38px;
+
+  border-left: 5px solid #34495e;
+  border-right: 5px solid #34495e;
+}
+
+
+/* =========================
+   POSIÇÃO DAS PESSOAS
+========================= */
+
+.person-one {
+  left: 110px;
+
+  transform: rotate(-8deg);
+}
+
+.person-one .body {
+  background-color: #ff5a5f;
+}
+
+
+.person-two {
+  left: 160px;
+
+  transform: rotate(7deg);
+}
+
+.person-two .body {
+  background-color: #19a9d1;
+}
+
+
+.person-three {
+  left: 210px;
+
+  transform: rotate(-6deg);
+}
+
+.person-three .body {
+  background-color: #ffb52e;
+}
+
+
+.person-four {
+  left: 265px;
+
+  transform: rotate(8deg);
+}
+
+.person-four .body {
+  background-color: #ff5964;
+}
+
+
+/* =========================
+   TEXTO
+========================= */
+
+.sobre-texto {
+  width: 400px;
+}
+
+.sobre-texto h1 {
+  margin-bottom: 5px;
+
+  font-size: 34px;
+
+  font-weight: 400;
+
+  line-height: 1.2;
+}
+
+.sobre-texto ul {
+  margin: 0;
+
+  padding-left: 25px;
+}
+
+.sobre-texto li {
+  margin-bottom: 3px;
+
+  font-size: 20px;
+
+  font-weight: 400;
+
+  line-height: 1.45;
+}
+
+
+/* =========================
+   RESPONSIVIDADE
+========================= */
+
+@media (max-width: 750px) {
+
+  .sobre-content {
+    width: 100%;
+
+    flex-direction: column;
+
+    gap: 35px;
+
+    padding: 50px 25px;
+  }
+
+  .sobre-ilustracao {
+    width: 300px;
+    height: 210px;
+  }
+
+  .sobre-texto {
+    width: 300px;
+  }
+
+  .sobre-texto h1 {
+    font-size: 30px;
+  }
+
+  .sobre-texto li {
+    font-size: 18px;
+  }
+}
