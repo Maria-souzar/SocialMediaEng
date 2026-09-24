@@ -6,7 +6,7 @@ nome: Maria Eduarda de Souza Ribeiro
 professor: Bruno
 
 # Sobre
-site simples com o tema social media, contendo pagina inicial e o sobre
+site simples com o tema social media descrevendo um pouco sobre o trabalho deste profissional, contendo pagina inicial e o sobre
 ____________________________________________________________________________________
 
 ## Comando para iniciar o React
