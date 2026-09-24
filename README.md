@@ -1,6 +1,8 @@
 # SocialMediaEng
 Projeto de Engenharia de SoftwareII utilizando React+Vite+TypeScript
+
 nome: Maria Eduarda de Souza Ribeiro
+
 professor: Bruno
 
 # Sobre
