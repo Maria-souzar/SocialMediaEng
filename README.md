@@ -3,7 +3,7 @@ Projeto de Engenharia de SoftwareII
 
 nome: Maria Eduarda de Souza Ribeiro
 
-professor: Bruno
+professor: Bruno Zolotareff
 
 # Sobre
 O presente projeto consiste no desenvolvimento de um website voltado à prestação de serviços na área de Social Media, com o objetivo de apresentar informações sobre o trabalho desse profissional e oferecer uma experiência interativa ao usuário.
