@@ -22,14 +22,23 @@ O desenvolvimento será realizado com React, Vite e TypeScript, garantindo alta 
 
 # Tecnologias utilizadas:
 REACT + VITE
+
 JAVASCRIPT
+
 TYPESCRIPT
+
 HTML5
+
 CSS3
+
 SCRUM
+
 KANBAM
+
 FIGMA
+
 TRELLO
+
 GIT E GITHUB
 ____________________________________________________________________________________
 
