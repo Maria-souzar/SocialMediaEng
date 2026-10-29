@@ -19,8 +19,9 @@
 
 .sobre-header {
   width: 100%;
-  height: 40px;
+  height: 50px;
 
+  /* COR ORIGINAL */
   background-color: #08088f;
 }
 
@@ -30,9 +31,9 @@
   display: flex;
   align-items: center;
 
-  gap: 25px;
+  gap: 35px;
 
-  padding-left: 16px;
+  padding-left: 25px;
 }
 
 .sobre-nav a {
@@ -40,7 +41,8 @@
 
   text-decoration: none;
 
-  font-size: 14px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
   font-weight: 400;
 
   transition: opacity 0.2s ease;
@@ -58,7 +60,7 @@
 .sobre-main {
   width: 100%;
 
-  min-height: calc(100vh - 40px);
+  min-height: calc(100vh - 50px);
 
   display: flex;
 

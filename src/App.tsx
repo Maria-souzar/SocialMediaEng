@@ -2,14 +2,21 @@ import { Link, Routes, Route } from 'react-router-dom'
 import Sobre from './Sobre'
 import './App.css'
 
-function App() {
+function Home() {
   return (
     <div className="pagina">
 
       <header className="header">
         <nav className="nav">
-          <Link to="/">INICIO</Link>
-          <Link to="/sobre">SOBRE</Link>
+
+          <Link to="/">
+            INICIO
+          </Link>
+
+          <Link to="/sobre">
+            SOBRE
+          </Link>
+
         </nav>
       </header>
 
@@ -17,6 +24,7 @@ function App() {
         <section className="hero">
 
           <div className="hero-text">
+
             <h1>SOCIAL MEDIA</h1>
 
             <p>
@@ -28,12 +36,14 @@ function App() {
               <br />
               e autenticidade.
             </p>
+
           </div>
 
           <div
             className="social-image"
             aria-label="Ilustração de redes sociais"
           >
+
             <div className="phone">
 
               <div className="phone-title">
@@ -53,12 +63,31 @@ function App() {
               </div>
 
             </div>
+
           </div>
 
         </section>
       </main>
 
     </div>
+  )
+}
+
+function App() {
+  return (
+    <Routes>
+
+      <Route
+        path="/"
+        element={<Home />}
+      />
+
+      <Route
+        path="/sobre"
+        element={<Sobre />}
+      />
+
+    </Routes>
   )
 }
 
